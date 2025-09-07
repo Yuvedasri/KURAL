@@ -5,7 +5,6 @@ import { HomePage } from './pages/HomePage';
 import { TicketStatusPage } from './pages/TicketStatusPage';
 import { AdminLoginPage } from './pages/admin/LoginPage';
 import { AdminDashboardPage } from './pages/admin/DashboardPage';
-import { initializeLanguage } from './utils/i18n';
 
 // Protected Route Component
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -14,10 +13,6 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
 };
 
 function App() {
-  useEffect(() => {
-    initializeLanguage();
-  }, []);
-
   return (
     <Router>
       <div className="App">

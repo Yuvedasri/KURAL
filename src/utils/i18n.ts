@@ -249,6 +249,9 @@ export const initializeLanguage = () => {
   currentLanguage = getLanguage();
 };
 
+// Initialize language on module load
+initializeLanguage();
+
 export const getAvailableLanguages = () => {
   return Object.values(LANGUAGES);
 };
